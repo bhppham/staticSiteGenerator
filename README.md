@@ -1,0 +1,2 @@
+# staticSiteGenerator
+Static Site Generator
