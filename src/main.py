@@ -1,3 +1,4 @@
+from htmlnode import LeafNode
 from textnode import TextNode, TextType
 
 if __name__ == "__main__":
