@@ -90,8 +90,8 @@ def text_to_textnodes(text):
 
 def markdown_to_blocks(markdown):
     blocks = list(markdown.split("\n\n"))
-    filter(lambda x: x != "", blocks)
     blocks = list(map(lambda x: x.strip(), blocks))
+    blocks = [block for block in blocks if block != ""]
     return blocks
 
 
@@ -102,13 +102,17 @@ def text_to_children(text):
 
 def text_to_list_children(text, isOrdered):
     children_list = []
-    delimiter = r"\d*\.." if isOrdered else r"-."
-    items = re.split(delimiter, text)
+    items = text.split("\n")
     for item in items:
         item = item.strip()
-        if item:
-            children = text_to_children(item)
-            children_list.append(ParentNode(tag="li", children=children))
+        if not item:
+            continue
+        if isOrdered:
+            item = re.sub(r"^\d+\.\s*", "", item, count=1)
+        else:
+            item = re.sub(r"^-\s*", "", item, count=1)
+        children = text_to_children(item)
+        children_list.append(ParentNode(tag="li", children=children))
     return children_list
 
 
@@ -132,14 +136,21 @@ def html_node_from_block_type(blockType, value):
             no_new_line = value.replace("\n", " ")
             return ParentNode(tag="p", children=text_to_children(no_new_line))
         elif blockType == BlockType.HEADING:
-            tag = f"h{value.count("#")}"
-            return ParentNode(tag=tag, children=children)
+            match = re.match(r"^(#{1,6})\s+(.*)$", value.strip())
+            if not match:
+                return ParentNode(tag="p", children=text_to_children(value.strip()))
+            tag = f"h{len(match.group(1))}"
+            heading_text = match.group(2).strip()
+            return ParentNode(tag=tag, children=text_to_children(heading_text))
         elif blockType == BlockType.QUOTE:
-            return ParentNode(tag="blockquote", children=children)
+            quote_text = "\n".join(
+                [re.sub(r"^>\s?", "", line) for line in value.split("\n")]
+            ).strip()
+            return ParentNode(tag="blockquote", children=text_to_children(quote_text))
         elif blockType == BlockType.UNORDERED_LIST:
             return ParentNode(tag="ul", children=text_to_list_children(value, False))
         elif blockType == BlockType.ORDERED_LIST:
-            return ParentNode(tag="li", children=text_to_list_children(value, True))
+            return ParentNode(tag="ol", children=text_to_list_children(value, True))
         else:
             return ParentNode(tag="div", children=children)
 

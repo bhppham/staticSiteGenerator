@@ -260,6 +260,27 @@ the **same** even with inline stuff
             "<div><pre><code>This is text that _should_ remain\nthe **same** even with inline stuff\n</code></pre></div>",
         )
 
+    def test_heading_strips_hash(self):
+        md = "# Heading"
+        node = markdown_to_html_node(md)
+        html = node.to_html()
+        self.assertEqual(html, "<div><h1>Heading</h1></div>")
+
+    def test_blockquote_strips_markers(self):
+        md = "> quote line 1\n> quote line 2"
+        node = markdown_to_html_node(md)
+        html = node.to_html()
+        self.assertEqual(html, "<div><blockquote>quote line 1\nquote line 2</blockquote></div>")
+
+    def test_ordered_list_renders_ol_without_empty_first_item(self):
+        md = "1. one\n2. two\n3. three"
+        node = markdown_to_html_node(md)
+        html = node.to_html()
+        self.assertEqual(
+            html,
+            "<div><ol><li>one</li><li>two</li><li>three</li></ol></div>",
+        )
+
 
 if __name__ == "__main__":
     unittest.main()

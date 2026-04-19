@@ -39,6 +39,13 @@ class TestHTMLNode(unittest.TestCase):
             paragraph.to_html(),
         )
 
+    def test_leaf_node_img(self):
+        image = LeafNode("img", None, {"src": "/images/pic.png", "alt": "example"})
+        self.assertEqual(
+            '<img src="/images/pic.png" alt="example">',
+            image.to_html(),
+        )
+
     def test_to_html_with_children(self):
         child_node = LeafNode("span", "child")
         parent_node = ParentNode("div", [child_node])
