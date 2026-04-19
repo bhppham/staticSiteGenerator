@@ -1,3 +1,5 @@
+import shutil
+
 from htmlnode import LeafNode
 from inline_markdown import markdown_to_html_node
 from textnode import TextNode, TextType
@@ -13,3 +15,5 @@ if __name__ == "__main__":
     """
 
     markdown_to_html_node(markdown)
+
+    shutil.rmtree("../public/")

@@ -137,9 +137,9 @@ def html_node_from_block_type(blockType, value):
         elif blockType == BlockType.QUOTE:
             return ParentNode(tag="blockquote", children=children)
         elif blockType == BlockType.UNORDERED_LIST:
-            return ParentNode(tag="ul", children=text_to_list_children(block, False))
+            return ParentNode(tag="ul", children=text_to_list_children(value, False))
         elif blockType == BlockType.ORDERED_LIST:
-            return ParentNode(tag="li", children=text_to_list_children(block, True))
+            return ParentNode(tag="li", children=text_to_list_children(value, True))
         else:
             return ParentNode(tag="div", children=children)
 
