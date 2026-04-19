@@ -4,7 +4,12 @@ import unittest
 from contextlib import redirect_stdout
 from pathlib import Path
 
-from main import extract_title, generate_page, generate_pages_recursive
+from main import (
+    copy_static_to_public,
+    extract_title,
+    generate_page,
+    generate_pages_recursive,
+)
 
 
 class TestExtractTitle(unittest.TestCase):
@@ -87,6 +92,62 @@ class TestGeneratePagesRecursive(unittest.TestCase):
             self.assertIn("<title>Home</title>", index_html)
             self.assertIn("<title>Post</title>", post_html)
             self.assertIn("Generating from", output_buffer.getvalue())
+
+    def test_generate_pages_recursive_raises_when_content_dir_missing(self):
+        with tempfile.TemporaryDirectory() as temp_dir:
+            temp_path = Path(temp_dir)
+            template_path = temp_path / "template.html"
+            output_dir = temp_path / "public"
+            template_path.write_text(
+                "<html><head><title>{{ Title }}</title></head><body>{{ Content }}</body></html>",
+                encoding="utf-8",
+            )
+
+            with self.assertRaises(FileNotFoundError):
+                generate_pages_recursive(
+                    str(temp_path / "missing_content"),
+                    str(template_path),
+                    str(output_dir),
+                )
+
+
+class TestCopyStaticToPublic(unittest.TestCase):
+    def test_copy_static_to_public_cleans_and_copies_nested_files(self):
+        with tempfile.TemporaryDirectory() as temp_dir:
+            temp_path = Path(temp_dir)
+            static_dir = temp_path / "static"
+            public_dir = temp_path / "public"
+
+            (static_dir / "images").mkdir(parents=True, exist_ok=True)
+            (static_dir / "css").mkdir(parents=True, exist_ok=True)
+            (static_dir / "images" / "photo.png").write_text("img", encoding="utf-8")
+            (static_dir / "css" / "index.css").write_text("body{}", encoding="utf-8")
+
+            (public_dir / "old_dir").mkdir(parents=True, exist_ok=True)
+            (public_dir / "old_dir" / "old.txt").write_text("old", encoding="utf-8")
+            (public_dir / "stale.txt").write_text("stale", encoding="utf-8")
+
+            output_buffer = io.StringIO()
+            with redirect_stdout(output_buffer):
+                copy_static_to_public(str(static_dir), str(public_dir))
+
+            self.assertFalse((public_dir / "stale.txt").exists())
+            self.assertFalse((public_dir / "old_dir").exists())
+            self.assertTrue((public_dir / "images" / "photo.png").exists())
+            self.assertTrue((public_dir / "css" / "index.css").exists())
+
+            logs = output_buffer.getvalue()
+            self.assertIn("static/images/photo.png -> public/images/photo.png", logs)
+            self.assertIn("static/css/index.css -> public/css/index.css", logs)
+
+    def test_copy_static_to_public_raises_when_static_missing(self):
+        with tempfile.TemporaryDirectory() as temp_dir:
+            temp_path = Path(temp_dir)
+            with self.assertRaises(FileNotFoundError):
+                copy_static_to_public(
+                    str(temp_path / "missing_static"),
+                    str(temp_path / "public"),
+                )
 
 
 if __name__ == "__main__":

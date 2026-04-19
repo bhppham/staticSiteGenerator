@@ -59,3 +59,23 @@ class TestHTMLNode(unittest.TestCase):
             parent_node.to_html(),
             "<div><span><b>grandchild</b></span></div>",
         )
+
+    def test_leaf_without_tag_returns_plain_text(self):
+        node = LeafNode(None, "just text")
+        self.assertEqual(node.to_html(), "just text")
+
+    def test_leaf_without_value_raises(self):
+        node = LeafNode("p", None)
+        with self.assertRaises(ValueError):
+            node.to_html()
+
+    def test_parent_without_tag_raises(self):
+        child = LeafNode("span", "child")
+        node = ParentNode(None, [child])
+        with self.assertRaises(ValueError):
+            node.to_html()
+
+    def test_parent_without_children_raises(self):
+        node = ParentNode("div", [])
+        with self.assertRaises(ValueError):
+            node.to_html()
