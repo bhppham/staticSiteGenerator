@@ -1,47 +1,49 @@
-# Experiences
+# Experience
 
-## [Tufts University](https://www.tufts.edu)
+This page highlights selected stories and growth themes from my work. For complete chronology, full bullet details, and the full skills matrix, please view my resume.
 
-_M.S. in Human Factors Engineering_ | **09/2025 - Present**
+## Professional Snapshot
 
-- Pursuing a master’s degree to deepen my understanding of **user-centered design** and strengthen my ability to build thoughtful, end-to-end systems as a **full-stack engineer**
-- Developing skills in usability, interaction design, and human-centered research to better connect user needs with technical implementation
-- Developer in **JumboCode**, a student-led organization building software for **non-profits**
-- Currently working with Food Link to design and develop a volunteer portal that helps onboard and educate volunteers on their roles and responsibilities
+I started in backend-heavy engineering work and learned how to build reliable systems that perform in production. Over time, I expanded toward full-stack and product-minded execution by taking on planning, collaboration, and delivery ownership across the development lifecycle. My graduate training in Human Factors Engineering now strengthens how I translate user needs into technical decisions.
 
-## [Tracelink](https://www.tracelink.com)
+## Selected Experience Highlights
+
+## [JumboCode](https://jumbocode.org)
+
+_Software Developer_ | **09/2025 - Present**
+
+- I work on software for nonprofit partners where user needs are often constrained by time, staffing, and onboarding realities, so product decisions have to be practical and clear.
+- In the Food Link volunteer portal project, I focus on turning volunteer and coordinator needs into concrete product behavior that improves role clarity and onboarding confidence.
+
+## [TraceLink](https://www.tracelink.com)
 
 _Software Engineer_ | **01/2023 - 06/2025**
 
-- Contributed to the company platform, gaining end-to-end experience across the **development lifecycle** (development, testing, staging, and production deployment)
-- Worked within **Agile framework**, participating in sprint planning, execution, and retrospectives to organize and deliver work effectively
-- Served as **Scrum Master**, improving team coordination and development efficiency while helping the team better understand dependencies and work across teams
-- Authored a design document for a feature, translating requirements into a clear technical approach
-- Built a metrics and monitoring suite using **Grafana**, **Kibana**, and **Prometheus APIs** to track data processing performance
-- Developed a performance testing suite with JMeter to simulate production-level load and validate system efficiency improvements
+- As a **Scrum Master**, I grew beyond implementation into delivery ownership by helping the team plan, sequence, and execute work across development, testing, staging, and production release cycles.
+- I also contributed to reliability and performance improvements through observability and performance-testing efforts, which helped the team make faster, better-informed system decisions under production-scale conditions.
 
-## [CommCreative aka Marketbridge](https://marketbridge.com)
+## [CommCreative (now Marketbridge)](https://marketbridge.com)
 
-_Front-End Engineer_ | **07/2022 - 12/2022**
+_Front-End Engineer_ | **06/2022 - 12/2022**
 
-- Maintained and updated client websites, ensuring functionality, consistency, and performance across projects
-- Built and customized email templates using HTML/CSS, balancing design requirements with across-platform compatibility
-- Worked with content management systems (CMS) to manage and deploy client-facing content
-- Developed front-end skills across PHP, HTML, CSS, and JavaScript in a production environment
-- Collaborated with clients and internal teams, incorporating feedback while tracking billable hours and project scope
-- Supported marketing efforts by analyzing campaign performance (impressions, clicks, and engagement metrics)
+- This role taught me how to build effectively inside client-feedback loops, where iteration speed and communication quality are just as important as implementation quality.
+- I learned to balance technical execution with business constraints by tracking billable scope and using engagement signals (clicks, impressions, and usage trends) to guide content and design refinements.
+
+## Education
+
+## [Tufts University](https://www.tufts.edu)
+
+_Master of Human Factors Engineering_ | **09/2025 - Present (Expected 05/2027)**
+
+- My coursework and training in usability, interaction design, and human-centered research sharpen how I connect user behavior insights to implementation choices.
+- Graduate work plus hands-on nonprofit product development has strengthened my ability to pair user-centered reasoning with day-to-day engineering delivery.
 
 ## [Worcester Polytechnic Institute](https://www.wpi.edu)
 
+_Bachelor of Science in Computer Science and Data Science_ | **08/2018 - 05/2022**
 
-
-_B.S. in Computer Science & Data Science_ | **08/2018 - 05/2022**
-
-- Studied in a highly project-based curriculum, completing major interdisciplinary projects (**HUA, IQP, MQP**) along with multiple CS-focused builds
-- Gained hands-on experience tackling open-ended problems, collaborating in teams, and building end-to-end technical solutions
-- Developed a systems-oriented approach: connecting technical implementation with broader user and context considerations
-- Active in cultural organizations (**International Student Council, Russian-Speaking Student Association**), engaging with diverse communities
-- Served as an **International Peer Mentor**, supporting incoming students in adapting to a new academic and cultural environment
+- WPI's project-based structure trained me to tackle open-ended, interdisciplinary problems by combining technical execution with context-driven thinking.
+- As an **International Peer Mentor** and active member of multicultural student organizations, I built stronger collaboration habits and community-oriented leadership skills.
 
 ## More about me
 
