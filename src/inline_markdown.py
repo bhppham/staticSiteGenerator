@@ -145,7 +145,7 @@ def html_node_from_block_type(blockType, value):
         elif blockType == BlockType.QUOTE:
             quote_text = "\n".join(
                 [re.sub(r"^>\s?", "", line) for line in value.split("\n")]
-            ).strip()
+            )
             return ParentNode(tag="blockquote", children=text_to_children(quote_text))
         elif blockType == BlockType.UNORDERED_LIST:
             return ParentNode(tag="ul", children=text_to_list_children(value, False))

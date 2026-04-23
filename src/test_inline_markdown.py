@@ -272,6 +272,12 @@ the **same** even with inline stuff
         html = node.to_html()
         self.assertEqual(html, "<div><blockquote>quote line 1\nquote line 2</blockquote></div>")
 
+    def test_blockquote_preserves_blank_lines(self):
+        md = "> quote line 1\n>\n> quote line 3"
+        node = markdown_to_html_node(md)
+        html = node.to_html()
+        self.assertEqual(html, "<div><blockquote>quote line 1\n\nquote line 3</blockquote></div>")
+
     def test_ordered_list_renders_ol_without_empty_first_item(self):
         md = "1. one\n2. two\n3. three"
         node = markdown_to_html_node(md)

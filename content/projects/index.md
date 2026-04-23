@@ -4,7 +4,7 @@ This page highlights project stories, decisions, and growth. For full technical 
 
 ## In Progress: Sophisticated Portfolio
 
-**Story:** I am actively redesigning my portfolio as a more immersive and expressive experience inspired by the interface language of DOTA 2. The goal is to push my front-end and interaction design skills beyond a standard personal site and turn the portfolio itself into a product.
+**Story:** I am actively designing my new portfolio as a more immersive and expressive experience inspired by the interface language of DOTA 2. The goal is to push my front-end and interaction design skills beyond a standard personal site and turn the portfolio itself into a product.
 
 **Current focus:** I am currently prototyping page layouts, interaction patterns, and content hierarchy to make sure the visual style stays bold while the site remains easy to navigate.
 
