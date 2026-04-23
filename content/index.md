@@ -1,45 +1,19 @@
-# Tolkien Fan Club
+# Bill Pham
 
-![JRR Tolkien sitting](/images/tolkien.png)
+![Profile Picture](/images/Profile.JPG)
 
-Here's the deal, **I like Tolkien**.
+## About Me
 
-> "I am in fact a Hobbit in all but size."
->
-> -- J.R.R. Tolkien
+I’m a graduate student in Human Factors Engineering at Tufts University, and I like working on problems where people and complex systems meet. My work sits somewhere between UX, product thinking, and software—I enjoy figuring out how to make tools feel more intuitive and actually fit the way people think and work.
 
-## Blog posts
+I tend to approach problems by stepping back and looking at the bigger picture first before diving into details. I’m especially interested in bridging design and engineering, turning insights about people into things that are both thoughtful and practical to build.
 
-- [Why Glorfindel is More Impressive than Legolas](/blog/glorfindel)
-- [Why Tom Bombadil Was a Mistake](/blog/tom)
-- [The Unparalleled Majesty of "The Lord of the Rings"](/blog/majesty)
+I’m still exploring which direction I want to take this in, but I’m consistently drawn to work that involves understanding people. I like connecting with others, hearing how they make sense of their experiences, and building things that help them feel a bit more clear, capable, and supported.
 
-## Reasons I like Tolkien
+## More about me
 
-- You can spend years studying the legendarium and still not understand its depths
-- It can be enjoyed by children and adults alike
-- Disney _didn't ruin it_ (okay, but Amazon might have)
-- It created an entirely new genre of fantasy
+[Now](/now) | [Experience](/experience) | [Projects](/projects) | [Resume](/files/resume.pdf)
 
-## My favorite characters (in order)
+## Let's connect
 
-1. Gandalf
-2. Bilbo
-3. Sam
-4. Glorfindel
-5. Galadriel
-6. Elrond
-7. Thorin
-8. Sauron
-9. Aragorn
-
-Here's what `elflang` looks like (the perfect coding language):
-
-```
-func main(){
-    fmt.Println("Aiya, Ambar!")
-}
-```
-
-Want to get in touch? [Contact me here](/contact).
-
+[Email Me](mailto:hppham1909@gmail.com) | [Connect on LinkedIn](https://www.linkedin.com/in/bhppham)
