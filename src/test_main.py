@@ -29,11 +29,12 @@ class TestGeneratePage(unittest.TestCase):
             temp_path = Path(temp_dir)
             markdown_path = temp_path / "content" / "index.md"
             template_path = temp_path / "template.html"
-            dest_path = temp_path / "public" / "nested" / "index.html"
+            dest_path = temp_path / "docs" / "nested" / "index.html"
 
             markdown_path.parent.mkdir(parents=True, exist_ok=True)
             markdown_path.write_text(
-                "# Home Page\n\nThis is a **bold** line.", encoding="utf-8"
+                '# Home Page\n\nThis is a **bold** line.\n\n[Contact](/contact)\n\n![img](/images/a.png)',
+                encoding="utf-8",
             )
             template_path.write_text(
                 "<html><head><title>{{ Title }}</title></head><body>{{ Content }}</body></html>",
@@ -46,15 +47,16 @@ class TestGeneratePage(unittest.TestCase):
                     str(markdown_path),
                     str(template_path),
                     str(dest_path),
+                    "/staticSiteGenerator/",
                 )
 
             self.assertTrue(dest_path.exists())
             generated_html = dest_path.read_text(encoding="utf-8")
             self.assertIn("<title>Home Page</title>", generated_html)
-            self.assertIn(
-                "<div><h1>Home Page</h1><p>This is a <b>bold</b> line.</p></div>",
-                generated_html,
-            )
+            self.assertIn("<h1>Home Page</h1>", generated_html)
+            self.assertIn("<p>This is a <b>bold</b> line.</p>", generated_html)
+            self.assertIn('href="/staticSiteGenerator/contact"', generated_html)
+            self.assertIn('src="/staticSiteGenerator/images/a.png"', generated_html)
             self.assertIn("Generating from", output_buffer.getvalue())
 
 
@@ -64,7 +66,7 @@ class TestGeneratePagesRecursive(unittest.TestCase):
             temp_path = Path(temp_dir)
             content_dir = temp_path / "content"
             template_path = temp_path / "template.html"
-            output_dir = temp_path / "public"
+            output_dir = temp_path / "docs"
 
             (content_dir / "blog").mkdir(parents=True, exist_ok=True)
             (content_dir / "index.md").write_text("# Home\n\nWelcome.", encoding="utf-8")
@@ -80,7 +82,10 @@ class TestGeneratePagesRecursive(unittest.TestCase):
             output_buffer = io.StringIO()
             with redirect_stdout(output_buffer):
                 generate_pages_recursive(
-                    str(content_dir), str(template_path), str(output_dir)
+                    str(content_dir),
+                    str(template_path),
+                    str(output_dir),
+                    "/",
                 )
 
             self.assertTrue((output_dir / "index.html").exists())
@@ -97,7 +102,7 @@ class TestGeneratePagesRecursive(unittest.TestCase):
         with tempfile.TemporaryDirectory() as temp_dir:
             temp_path = Path(temp_dir)
             template_path = temp_path / "template.html"
-            output_dir = temp_path / "public"
+            output_dir = temp_path / "docs"
             template_path.write_text(
                 "<html><head><title>{{ Title }}</title></head><body>{{ Content }}</body></html>",
                 encoding="utf-8",
@@ -108,6 +113,7 @@ class TestGeneratePagesRecursive(unittest.TestCase):
                     str(temp_path / "missing_content"),
                     str(template_path),
                     str(output_dir),
+                    "/",
                 )
 
 
@@ -116,7 +122,7 @@ class TestCopyStaticToPublic(unittest.TestCase):
         with tempfile.TemporaryDirectory() as temp_dir:
             temp_path = Path(temp_dir)
             static_dir = temp_path / "static"
-            public_dir = temp_path / "public"
+            public_dir = temp_path / "docs"
 
             (static_dir / "images").mkdir(parents=True, exist_ok=True)
             (static_dir / "css").mkdir(parents=True, exist_ok=True)
@@ -137,8 +143,8 @@ class TestCopyStaticToPublic(unittest.TestCase):
             self.assertTrue((public_dir / "css" / "index.css").exists())
 
             logs = output_buffer.getvalue()
-            self.assertIn("static/images/photo.png -> public/images/photo.png", logs)
-            self.assertIn("static/css/index.css -> public/css/index.css", logs)
+            self.assertIn("static/images/photo.png -> docs/images/photo.png", logs)
+            self.assertIn("static/css/index.css -> docs/css/index.css", logs)
 
     def test_copy_static_to_public_raises_when_static_missing(self):
         with tempfile.TemporaryDirectory() as temp_dir:
@@ -146,7 +152,7 @@ class TestCopyStaticToPublic(unittest.TestCase):
             with self.assertRaises(FileNotFoundError):
                 copy_static_to_public(
                     str(temp_path / "missing_static"),
-                    str(temp_path / "public"),
+                    str(temp_path / "docs"),
                 )
 
 

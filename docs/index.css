@@ -1,0 +1,14 @@
+body {
+	font-family: "Roboto", serif;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 40vw;
+	padding: 1em 2em 2em 2em;
+	overflow-x: clip;
+	overflow-y: scroll;
+	box-shadow: 0 1em 0px 0px #FFF, 0 -1em 0px 0px #FFF, -1em 0 .5em .2em #5f5f5f, 1em 0 .5em .2em #5f5f5f;
+}
+
+blockquote {
+	white-space: pre-wrap;
+}
