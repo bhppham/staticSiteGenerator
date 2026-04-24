@@ -47,7 +47,7 @@ _Bachelor of Science in Computer Science and Data Science_ | **08/2018 - 05/2022
 
 ## More about me
 
-[Now](/now) | [Experience](/experience) | [Projects](/projects) | [Resume](/files/resume.pdf)
+[Home](/) | [Now](/now) | [Projects](/projects) | [Resume](/files/resume.pdf)
 
 ## Let's connect
 
