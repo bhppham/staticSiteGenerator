@@ -36,7 +36,7 @@ This page highlights project stories, decisions, and growth. For full technical 
 
 [Published Paper](https://arxiv.org/abs/2207.09534)
 
-**Story:** VisQuiz was my major qualifying project and a core experience in connecting full-stack implementation with research goals. I helped build the quiz platform, capture participant interaction data, and support the analysis workflow behind the study.
+**Story:** VisQuiz was my major qualifying project and a core experience in connecting full-stack implementation with research goals. My team built the quiz platform, captured participant interaction data, and ran the analysis workflow for the study.
 
 **Impact:** The project produced both a working research tool and publishable findings on graphical interpretation development, bridging software delivery with academic output.
 
