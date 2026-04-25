@@ -1,6 +1,6 @@
 # My Projects
 
-This page highlights project stories, decisions, and growth. For full technical bullet details and complete chronology, please view my resume.
+This page highlights project stories, decisions, and growth. For full technical bullet details and complete chronology, please view [my resume](/files/resume.pdf).
 
 ## In Progress: Sophisticated Portfolio
 

@@ -1,6 +1,6 @@
 # Experience
 
-This page highlights selected stories and growth themes from my work. For complete chronology, full bullet details, and the full skills matrix, please view my resume.
+This page highlights selected stories and growth themes from my work. For complete chronology, full bullet details, and the full skills matrix, please view [my resume](/files/resume.pdf).
 
 ## Professional Snapshot
 
@@ -12,7 +12,7 @@ I started in backend-heavy engineering work and learned how to build reliable sy
 
 _Software Developer_ | **09/2025 - Present**
 
-- I work on software for nonprofit partners where user needs are often constrained by time, staffing, and onboarding realities, so product decisions have to be practical and clear.
+- I work on software used by nonprofit partners whose needs are often constrained by time, staffing, and onboarding realities, so product decisions have to be practical and clear.
 - In the Food Link volunteer portal project, I focus on turning volunteer and coordinator needs into concrete product behavior that improves role clarity and onboarding confidence.
 
 ## [TraceLink](https://www.tracelink.com)

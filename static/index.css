@@ -82,6 +82,11 @@ a {
   text-decoration-line: underline;
 }
 
+b {
+  pointer-events: none;
+  text-decoration: none;
+}
+
 h1, h2 {
   margin-top: 1rem;
   margin-bottom: 1rem;
