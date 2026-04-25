@@ -85,6 +85,7 @@ a {
 b {
   pointer-events: none;
   text-decoration: none;
+  color: var(--primary-color, #000000);
 }
 
 h1, h2 {
