@@ -48,3 +48,13 @@ class TestBlockNode(unittest.TestCase):
         block = "before\n```\ncode\n```\nafter"
         t = block_to_block_type(block)
         self.assertEqual(t, BlockType.CODE)
+
+    def test_container_type_without_class(self):
+        block = "---\nSome content"
+        t = block_to_block_type(block)
+        self.assertEqual(t, BlockType.CONTAINER)
+
+    def test_container_type_with_class(self):
+        block = "--- hero\nSome content"
+        t = block_to_block_type(block)
+        self.assertEqual(t, BlockType.CONTAINER)

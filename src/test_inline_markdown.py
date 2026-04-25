@@ -227,6 +227,25 @@ This is the same paragraph on a new line
         blocks = markdown_to_blocks(md)
         self.assertEqual(blocks, ["This is **bolded** paragraph", "HELLO"])
 
+    def test_markdown_container_blocks_with_separator(self):
+        md = """
+Hello intro
+--- hero
+# Welcome
+This is inside container.
+---
+After container
+"""
+        blocks = markdown_to_blocks(md)
+        self.assertEqual(
+            blocks,
+            [
+                "Hello intro",
+                "--- hero\n# Welcome\nThis is inside container.",
+                "After container",
+            ],
+        )
+
 
 class TestMarkdownToHTML(unittest.TestCase):
     def test_paragraphs(self):
@@ -285,6 +304,24 @@ the **same** even with inline stuff
         self.assertEqual(
             html,
             "<div><ol><li>one</li><li>two</li><li>three</li></ol></div>",
+        )
+
+    def test_container_block_renders_div_with_class(self):
+        md = "--- hero\n# Welcome\n---"
+        node = markdown_to_html_node(md)
+        html = node.to_html()
+        self.assertEqual(
+            html,
+            '<div><div class="hero"><h1>Welcome</h1></div></div>',
+        )
+
+    def test_container_block_renders_div_without_class(self):
+        md = "---\nParagraph inside\n---"
+        node = markdown_to_html_node(md)
+        html = node.to_html()
+        self.assertEqual(
+            html,
+            "<div><div><p>Paragraph inside</p></div></div>",
         )
 
 

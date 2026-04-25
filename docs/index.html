@@ -1,13 +1,72 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bill Pham</title>
-    <link href="/index.css" rel="stylesheet" />
-  </head>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <title>Bill Pham</title>
+  <link href="/index.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
 
-  <body>
-    <article><div><h1>Bill Pham</h1><p><img src="/images/Profile.JPG" alt="Profile Picture"></p><h2>About Me</h2><p>I’m a graduate student in Human Factors Engineering at Tufts University, and I like working on problems where people and complex systems meet. My work sits somewhere between UX, product thinking, and software—I enjoy figuring out how to make tools feel more intuitive and actually fit the way people think and work.</p><p>I tend to approach problems by stepping back and looking at the bigger picture first before diving into details. I’m especially interested in bridging design and engineering, turning insights about people into things that are both thoughtful and practical to build.</p><p>I’m still exploring which direction I want to take this in, but I’m consistently drawn to work that involves understanding people. I like connecting with others, hearing how they make sense of their experiences, and building things that help them feel a bit more clear, capable, and supported.</p><h2>More about me</h2><p><a href="/now">Now</a> | <a href="/experience">Experience</a> | <a href="/projects">Projects</a> | <a href="/files/resume.pdf">Resume</a></p><h2>Let's connect</h2><p><a href="mailto:hppham1909@gmail.com">Email Me</a> | <a href="https://www.linkedin.com/in/bhppham">Connect on LinkedIn</a></p></div></article>
-  </body>
+<body>
+  <div class="flex">
+    <div id="more-about-me" class="nav nav-left flex">
+      <div class="w-[1ch] max-w-[1ch] mx-2 content-center">
+        <button id="home_btn" onclick="window.location.href='/'" class="w-[1ch] wrap-anywhere leading-[1.5ch] my-2">H O M E</button>
+        <button id="now_btn" onclick="window.location.href='/now'" class="w-[1ch] wrap-anywhere leading-[1.5ch] my-2">N O W</button>
+        <button id="exp_btn" onclick="window.location.href='/experience'" class="w-[1ch] wrap-anywhere leading-[1.5ch] my-2">E X P E R I E N C E</button>
+        <button id="proj_btn" onclick="window.location.href='/projects'" class="w-[1ch] wrap-anywhere leading-[1.5ch] my-2">P R O J E C T S</button>
+        <button onclick="window.location.href='/files/resume.pdf'" class="w-[1ch] wrap-anywhere leading-[1.5ch] my-2">R E S U M E</button>
+      </div>
+      <div class="nav-header w-[2ch] max-w-[2ch] mx-2 content-center">
+        <p class="w-[1ch] wrap-anywhere leading-[1.5ch] my-2"><</p>
+        <p class="w-[1ch] wrap-anywhere leading-[1.5ch] my-2">M O R E</p>
+        <p class="w-[1ch] wrap-anywhere leading-[1.5ch] my-2">A B O U T</p>
+        <p class="w-[1ch] wrap-anywhere leading-[1.5ch] my-2">M E</p>
+        <p class="w-[1ch] wrap-anywhere leading-[1.5ch] my-2"><</p>
+      </div>
+    </div>
+    <article><div><h1>Bill Pham</h1><p><img src="/images/Profile.JPEG" alt="Profile Picture"></p><h2>About Me</h2><p>I’m a graduate student in Human Factors Engineering at Tufts University, and I like working on problems where people and complex systems meet. My work sits somewhere between UX, product thinking, and software—I enjoy figuring out how to make tools feel more intuitive and actually fit the way people think and work.</p><p>I tend to approach problems by stepping back and looking at the bigger picture first before diving into details. I’m especially interested in bridging design and engineering, turning insights about people into things that are both thoughtful and practical to build.</p><p>I’m still exploring which direction I want to take this in, but I’m consistently drawn to work that involves understanding people. I like connecting with others, hearing how they make sense of their experiences, and building things that help them feel a bit more clear, capable, and supported.</p><div class="bot-nav"><h2>More about me</h2><p><a href="/now">Now</a> | <a href="/experience">Experience</a> | <a href="/projects">Projects</a> | <a href="/files/resume.pdf">Resume</a></p><h2>Let's connect</h2><p><a href="mailto:hppham1909@gmail.com">Email Me</a> | <a href="https://www.linkedin.com/in/bhppham">Connect on LinkedIn</a></p></div></div></article>
+    <div id="lets-connect" class="nav nav-right flex">
+      <div class="nav-header w-[2ch] max-w-[2ch] mx-2 content-center">
+        <p class="w-[1ch] wrap-anywhere leading-[1.5ch] my-2">></p>
+        <p class="w-[1ch] wrap-anywhere leading-[1.5ch] my-2">C O N N E C T</p>
+        <p class="w-[1ch] wrap-anywhere leading-[1.5ch] my-2 align-middle">W I T H</p>
+        <p class="w-[1ch] wrap-anywhere leading-[1.5ch] my-2">M E</p>
+        <p class="w-[1ch] wrap-anywhere leading-[1.5ch] my-2">></p>
+      </div>
+      <div class="w-[1ch] max-w-[1ch] mx-2 content-center">
+        <button onclick="window.location.href='mailto:hppham1909@gmail.com'" class="w-[1ch] wrap-anywhere leading-[1.5ch] my-2">E M A I L</button>
+        <button onclick="window.location.href='https://www.linkedin.com/in/bhppham'" class="w-[1ch] wrap-anywhere leading-[1.5ch] my-2">L I N K E D I N</button>
+      </div>
+    </div>
+  </div>
+
+  <script defer>
+    const path = window.location.pathname;
+    const home_btn = document.getElementById('home_btn');
+    const now_btn = document.getElementById('now_btn');
+    const exp_btn = document.getElementById('exp_btn');
+    const proj_btn = document.getElementById('proj_btn');
+
+    switch (path) {
+    case "/":
+      home_btn.classList.add('active');
+      break;
+    case "/now/":
+      now_btn.classList.add('active');
+      break;
+    case "/experience/":
+      exp_btn.classList.add('active');
+      break;
+    case "/projects/":
+      proj_btn.classList.add('active');
+      break;
+    }
+  </script>
+</body>
 </html>

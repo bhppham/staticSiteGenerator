@@ -1,6 +1,6 @@
 # Bill Pham
 
-![Profile Picture](/images/Profile.JPG)
+![Profile Picture](/images/Profile.JPEG)
 
 ## About Me
 
@@ -10,6 +10,7 @@ I tend to approach problems by stepping back and looking at the bigger picture f
 
 I’m still exploring which direction I want to take this in, but I’m consistently drawn to work that involves understanding people. I like connecting with others, hearing how they make sense of their experiences, and building things that help them feel a bit more clear, capable, and supported.
 
+--- bot-nav
 ## More about me
 
 [Now](/now) | [Experience](/experience) | [Projects](/projects) | [Resume](/files/resume.pdf)
@@ -17,3 +18,4 @@ I’m still exploring which direction I want to take this in, but I’m consiste
 ## Let's connect
 
 [Email Me](mailto:hppham1909@gmail.com) | [Connect on LinkedIn](https://www.linkedin.com/in/bhppham)
+---

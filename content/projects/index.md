@@ -52,6 +52,7 @@ This page highlights project stories, decisions, and growth. For full technical 
 
 **What I learned:** Leadership starts early in project work through clear delegation, communication, and keeping both delivery and team learning outcomes in view.
 
+--- bot-nav
 ## More about me
 
 [Home](/) | [Now](/now) | [Experience](/experience)  | [Resume](/files/resume.pdf)
@@ -59,3 +60,4 @@ This page highlights project stories, decisions, and growth. For full technical 
 ## Let's connect
 
 [Email Me](mailto:hppham1909@gmail.com) | [Connect on LinkedIn](https://www.linkedin.com/in/bhppham)
+---

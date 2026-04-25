@@ -1,7 +1,7 @@
 import re
 
 from blocknode import BlockType, block_to_block_type
-from htmlnode import HTMLNode, ParentNode
+from htmlnode import ParentNode
 from textnode import TextNode, TextType, text_node_to_html_node
 
 
@@ -88,11 +88,70 @@ def text_to_textnodes(text):
     return result
 
 
+def extract_container_blocks(markdown):
+    lines = markdown.split("\n")
+    containers = []
+    outside_lines = []
+    in_container = False
+    container_header = ""
+    container_lines = []
+
+    for line in lines:
+        if in_container:
+            if line.startswith("---"):
+                container_content = "\n".join(container_lines).strip()
+                if container_content:
+                    containers.append(f"{container_header}\n{container_content}")
+                else:
+                    containers.append(container_header)
+                placeholder = f"__CONTAINER_BLOCK_{len(containers) - 1}__"
+                if outside_lines and outside_lines[-1] != "":
+                    outside_lines.append("")
+                outside_lines.append(placeholder)
+                outside_lines.append("")
+                in_container = False
+                container_header = ""
+                container_lines = []
+            else:
+                container_lines.append(line)
+        else:
+            if line.startswith("---"):
+                in_container = True
+                container_header = line.strip()
+                container_lines = []
+            else:
+                outside_lines.append(line)
+
+    if in_container:
+        container_content = "\n".join(container_lines).strip()
+        if container_content:
+            containers.append(f"{container_header}\n{container_content}")
+        else:
+            containers.append(container_header)
+        placeholder = f"__CONTAINER_BLOCK_{len(containers) - 1}__"
+        if outside_lines and outside_lines[-1] != "":
+            outside_lines.append("")
+        outside_lines.append(placeholder)
+        outside_lines.append("")
+
+    outside_markdown = "\n".join(outside_lines)
+    return outside_markdown, containers
+
+
 def markdown_to_blocks(markdown):
-    blocks = list(markdown.split("\n\n"))
+    outside_markdown, containers = extract_container_blocks(markdown)
+    blocks = list(outside_markdown.split("\n\n"))
     blocks = list(map(lambda x: x.strip(), blocks))
     blocks = [block for block in blocks if block != ""]
-    return blocks
+
+    result = []
+    for block in blocks:
+        match = re.fullmatch(r"__CONTAINER_BLOCK_(\d+)__", block)
+        if match:
+            result.append(containers[int(match.group(1))])
+        else:
+            result.append(block)
+    return result
 
 
 def text_to_children(text):
@@ -151,6 +210,15 @@ def html_node_from_block_type(blockType, value):
             return ParentNode(tag="ul", children=text_to_list_children(value, False))
         elif blockType == BlockType.ORDERED_LIST:
             return ParentNode(tag="ol", children=text_to_list_children(value, True))
+        elif blockType == BlockType.CONTAINER:
+            header, content = (value.split("\n", 1) + [""])[:2]
+            class_name = header[3:].strip()
+            content = content.strip()
+            if not content:
+                raise ValueError("Container block must have content")
+            nested_root = markdown_to_html_node(content)
+            props = {"class": class_name} if class_name else None
+            return ParentNode(tag="div", children=nested_root.children, props=props)
         else:
             return ParentNode(tag="div", children=children)
 

@@ -2,7 +2,7 @@
 
 (This is [a now page](https://nownownow.com/about), and if you have your own site, [you should make one](https://nownownow.com/about), too.)
 
-Updated April 21st, 2026 
+Updated April 25th, 2026 
 
 ## Professionally
 
@@ -16,7 +16,7 @@ Updated April 21st, 2026
 
 ## Watching
 
-- Modern Family Season 8
+- Modern Family Season 9
 - Rookie Season 8
 - Shangri-la Frontier Season 1
 
@@ -31,6 +31,7 @@ Updated April 21st, 2026
 - [The Diary Of A CEO with Steven Barlett](https://open.spotify.com/show/7iQXmUT7XGuZSzAMjoNWlX?si=86ccfb2c27274bc4)
 - [Critical Role Campaign 4](https://open.spotify.com/show/7e8zPFBpW0DtgyrrPnt0xT?si=d6c48e068a664766)
 
+--- bot-nav
 ## More about me
 
 [Home](/) | [Experience](/experience) | [Projects](/projects) | [Resume](/files/resume.pdf)
@@ -38,4 +39,4 @@ Updated April 21st, 2026
 ## Let's connect
 
 [Email Me](mailto:hppham1909@gmail.com) | [Connect on LinkedIn](https://www.linkedin.com/in/bhppham)
-
+---

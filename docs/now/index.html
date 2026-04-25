@@ -1,14 +1,73 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>What I'm doing now</title>
-    <link href="/index.css" rel="stylesheet" />
-  </head>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <title>What I'm doing now</title>
+  <link href="/index.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
 
-  <body>
-    <article><div><h1>What I'm doing now</h1><p>(This is <a href="https://nownownow.com/about">a now page</a>, and if you have your own site, <a href="https://nownownow.com/about">you should make one</a>, too.)</p><p>Updated April 21st, 2026</p><h2>Professionally</h2><ul><li>Actively looking for an co-op for Full-Stack/Front-end Engineering or Product Management</li><li>Finishing up my first year for my Master's in Human Factors Engineering to build up my design skills</li></ul><h2>Programming</h2><ul><li>Working on a more sophisticated personal website to enrich my front-end skills</li><li>Designing a solution to bring board game players together</li></ul><h2>Watching</h2><ul><li>Modern Family Season 8</li><li>Rookie Season 8</li><li>Shangri-la Frontier Season 1</li></ul><h2>Reading</h2><blockquote>Tomorrow, and Tomorrow, and Tomorrow
-by Gabrielle Zevin</blockquote><h2>Listening</h2><ul><li><a href="https://open.spotify.com/show/5nvRkVMH58SelKZYZFZx1S?si=7ae5782313064aa1">Ologies with Alie Ward</a></li><li><a href="https://open.spotify.com/show/7iQXmUT7XGuZSzAMjoNWlX?si=86ccfb2c27274bc4">The Diary Of A CEO with Steven Barlett</a></li><li><a href="https://open.spotify.com/show/7e8zPFBpW0DtgyrrPnt0xT?si=d6c48e068a664766">Critical Role Campaign 4</a></li></ul><h2>More about me</h2><p><a href="/">Home</a> | <a href="/experience">Experience</a> | <a href="/projects">Projects</a> | <a href="/files/resume.pdf">Resume</a></p><h2>Let's connect</h2><p><a href="mailto:hppham1909@gmail.com">Email Me</a> | <a href="https://www.linkedin.com/in/bhppham">Connect on LinkedIn</a></p></div></article>
-  </body>
+<body>
+  <div class="flex">
+    <div id="more-about-me" class="nav nav-left flex">
+      <div class="w-[1ch] max-w-[1ch] mx-2 content-center">
+        <button id="home_btn" onclick="window.location.href='/'" class="w-[1ch] wrap-anywhere leading-[1.5ch] my-2">H O M E</button>
+        <button id="now_btn" onclick="window.location.href='/now'" class="w-[1ch] wrap-anywhere leading-[1.5ch] my-2">N O W</button>
+        <button id="exp_btn" onclick="window.location.href='/experience'" class="w-[1ch] wrap-anywhere leading-[1.5ch] my-2">E X P E R I E N C E</button>
+        <button id="proj_btn" onclick="window.location.href='/projects'" class="w-[1ch] wrap-anywhere leading-[1.5ch] my-2">P R O J E C T S</button>
+        <button onclick="window.location.href='/files/resume.pdf'" class="w-[1ch] wrap-anywhere leading-[1.5ch] my-2">R E S U M E</button>
+      </div>
+      <div class="nav-header w-[2ch] max-w-[2ch] mx-2 content-center">
+        <p class="w-[1ch] wrap-anywhere leading-[1.5ch] my-2"><</p>
+        <p class="w-[1ch] wrap-anywhere leading-[1.5ch] my-2">M O R E</p>
+        <p class="w-[1ch] wrap-anywhere leading-[1.5ch] my-2">A B O U T</p>
+        <p class="w-[1ch] wrap-anywhere leading-[1.5ch] my-2">M E</p>
+        <p class="w-[1ch] wrap-anywhere leading-[1.5ch] my-2"><</p>
+      </div>
+    </div>
+    <article><div><h1>What I'm doing now</h1><p>(This is <a href="https://nownownow.com/about">a now page</a>, and if you have your own site, <a href="https://nownownow.com/about">you should make one</a>, too.)</p><p>Updated April 25th, 2026</p><h2>Professionally</h2><ul><li>Actively looking for an co-op for Full-Stack/Front-end Engineering or Product Management</li><li>Finishing up my first year for my Master's in Human Factors Engineering to build up my design skills</li></ul><h2>Programming</h2><ul><li>Working on a more sophisticated personal website to enrich my front-end skills</li><li>Designing a solution to bring board game players together</li></ul><h2>Watching</h2><ul><li>Modern Family Season 9</li><li>Rookie Season 8</li><li>Shangri-la Frontier Season 1</li></ul><h2>Reading</h2><blockquote>Tomorrow, and Tomorrow, and Tomorrow
+by Gabrielle Zevin</blockquote><h2>Listening</h2><ul><li><a href="https://open.spotify.com/show/5nvRkVMH58SelKZYZFZx1S?si=7ae5782313064aa1">Ologies with Alie Ward</a></li><li><a href="https://open.spotify.com/show/7iQXmUT7XGuZSzAMjoNWlX?si=86ccfb2c27274bc4">The Diary Of A CEO with Steven Barlett</a></li><li><a href="https://open.spotify.com/show/7e8zPFBpW0DtgyrrPnt0xT?si=d6c48e068a664766">Critical Role Campaign 4</a></li></ul><div class="bot-nav"><h2>More about me</h2><p><a href="/">Home</a> | <a href="/experience">Experience</a> | <a href="/projects">Projects</a> | <a href="/files/resume.pdf">Resume</a></p><h2>Let's connect</h2><p><a href="mailto:hppham1909@gmail.com">Email Me</a> | <a href="https://www.linkedin.com/in/bhppham">Connect on LinkedIn</a></p></div></div></article>
+    <div id="lets-connect" class="nav nav-right flex">
+      <div class="nav-header w-[2ch] max-w-[2ch] mx-2 content-center">
+        <p class="w-[1ch] wrap-anywhere leading-[1.5ch] my-2">></p>
+        <p class="w-[1ch] wrap-anywhere leading-[1.5ch] my-2">C O N N E C T</p>
+        <p class="w-[1ch] wrap-anywhere leading-[1.5ch] my-2 align-middle">W I T H</p>
+        <p class="w-[1ch] wrap-anywhere leading-[1.5ch] my-2">M E</p>
+        <p class="w-[1ch] wrap-anywhere leading-[1.5ch] my-2">></p>
+      </div>
+      <div class="w-[1ch] max-w-[1ch] mx-2 content-center">
+        <button onclick="window.location.href='mailto:hppham1909@gmail.com'" class="w-[1ch] wrap-anywhere leading-[1.5ch] my-2">E M A I L</button>
+        <button onclick="window.location.href='https://www.linkedin.com/in/bhppham'" class="w-[1ch] wrap-anywhere leading-[1.5ch] my-2">L I N K E D I N</button>
+      </div>
+    </div>
+  </div>
+
+  <script defer>
+    const path = window.location.pathname;
+    const home_btn = document.getElementById('home_btn');
+    const now_btn = document.getElementById('now_btn');
+    const exp_btn = document.getElementById('exp_btn');
+    const proj_btn = document.getElementById('proj_btn');
+
+    switch (path) {
+    case "/":
+      home_btn.classList.add('active');
+      break;
+    case "/now/":
+      now_btn.classList.add('active');
+      break;
+    case "/experience/":
+      exp_btn.classList.add('active');
+      break;
+    case "/projects/":
+      proj_btn.classList.add('active');
+      break;
+    }
+  </script>
+</body>
 </html>

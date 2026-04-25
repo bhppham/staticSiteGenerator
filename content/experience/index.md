@@ -45,6 +45,7 @@ _Bachelor of Science in Computer Science and Data Science_ | **08/2018 - 05/2022
 - WPI's project-based structure trained me to tackle open-ended, interdisciplinary problems by combining technical execution with context-driven thinking.
 - As an **International Peer Mentor** and active member of multicultural student organizations, I built stronger collaboration habits and community-oriented leadership skills.
 
+--- bot-nav
 ## More about me
 
 [Home](/) | [Now](/now) | [Projects](/projects) | [Resume](/files/resume.pdf)
@@ -52,3 +53,4 @@ _Bachelor of Science in Computer Science and Data Science_ | **08/2018 - 05/2022
 ## Let's connect
 
 [Email Me](mailto:hppham1909@gmail.com) | [Connect on LinkedIn](https://www.linkedin.com/in/bhppham)
+---
