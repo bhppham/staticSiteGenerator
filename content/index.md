@@ -1,6 +1,6 @@
 # Bill Pham
 
-![Profile Picture](/images/Profile.JPEG)
+![Profile Picture](/images/Profile.PNG)
 
 ## About Me
 
