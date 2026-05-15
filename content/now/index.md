@@ -2,33 +2,33 @@
 
 (This is [a now page](https://nownownow.com/about), and if you have your own site, [you should make one](https://nownownow.com/about), too.)
 
-Updated April 25th, 2026 
+Updated May 15th, 2026 
 
 ## Professionally
 
-- Actively looking for an co-op for Full-Stack/Front-end Engineering or Product Management 
-- Finishing up my first year for my Master's in Human Factors Engineering to build up my design skills
+- Actively looking for an co-op for Full-Stack/Front-end Engineering or Product Management
 
 ## Programming
 
 - Working on a more sophisticated personal website to enrich my front-end skills
-- Designing a solution to bring board game players together
+- Designing a solution to bring board game players together and reduce friction points
 
 ## Watching
 
-- Modern Family Season 9
-- Rookie Season 8
+- Modern Family Season 10
 - Shangri-la Frontier Season 1
 
 ## Reading
 
-> Tomorrow, and Tomorrow, and Tomorrow
-> by Gabrielle Zevin
+> The Brothers Karamazov
+> by Fyodor Dostoyevsky
 
+Recently really enjoyed Project Hail Mary by Andy Weir
 ## Listening
 
 - [Ologies with Alie Ward](https://open.spotify.com/show/5nvRkVMH58SelKZYZFZx1S?si=7ae5782313064aa1)
 - [The Diary Of A CEO with Steven Barlett](https://open.spotify.com/show/7iQXmUT7XGuZSzAMjoNWlX?si=86ccfb2c27274bc4)
+- [Acquired with Ben Gilbert and David Rosenthal](https://open.spotify.com/show/7Fj0XEuUQLUqoMZQdsLXqp)
 - [Critical Role Campaign 4](https://open.spotify.com/show/7e8zPFBpW0DtgyrrPnt0xT?si=d6c48e068a664766)
 
 --- bot-nav
@@ -39,4 +39,5 @@ Updated April 25th, 2026
 ## Let's connect
 
 [Email Me](mailto:hppham1909@gmail.com) | [Connect on LinkedIn](https://www.linkedin.com/in/bhppham)
+
 ---

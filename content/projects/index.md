@@ -60,4 +60,5 @@ This page highlights project stories, decisions, and growth. For full technical 
 ## Let's connect
 
 [Email Me](mailto:hppham1909@gmail.com) | [Connect on LinkedIn](https://www.linkedin.com/in/bhppham)
+
 ---

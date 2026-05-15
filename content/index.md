@@ -18,4 +18,5 @@ I’m still exploring which direction I want to take this in, but I’m consiste
 ## Let's connect
 
 [Email Me](mailto:hppham1909@gmail.com) | [Connect on LinkedIn](https://www.linkedin.com/in/bhppham)
+
 ---

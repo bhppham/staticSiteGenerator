@@ -53,4 +53,5 @@ _Bachelor of Science in Computer Science and Data Science_ | **AUG 2018 - MAY 20
 ## Let's connect
 
 [Email Me](mailto:hppham1909@gmail.com) | [Connect on LinkedIn](https://www.linkedin.com/in/bhppham)
+
 ---
