@@ -2,11 +2,11 @@
 
 (This is [a now page](https://nownownow.com/about), and if you have your own site, [you should make one](https://nownownow.com/about), too.)
 
-Updated May 15th, 2026 
+Updated Aug 26th, 2026 
 
 ## Professionally
 
-- Actively looking for an co-op for Full-Stack/Front-end Engineering or Product Management
+- Working at Tracelink as an Intern (Co-op) focusing on designs and usability of our products for internal customers
 
 ## Programming
 
@@ -15,8 +15,7 @@ Updated May 15th, 2026
 
 ## Watching
 
-- Modern Family Season 10
-- Shangri-la Frontier Season 1
+- Shangri-la Frontier Season 2
 
 ## Reading
 
@@ -30,7 +29,7 @@ Recently really enjoyed Project Hail Mary by Andy Weir
 - [Ologies with Alie Ward](https://open.spotify.com/show/5nvRkVMH58SelKZYZFZx1S?si=7ae5782313064aa1)
 - [The Diary Of A CEO with Steven Barlett](https://open.spotify.com/show/7iQXmUT7XGuZSzAMjoNWlX?si=86ccfb2c27274bc4)
 - [Acquired with Ben Gilbert and David Rosenthal](https://open.spotify.com/show/7Fj0XEuUQLUqoMZQdsLXqp)
-- [Critical Role Campaign 4](https://open.spotify.com/show/7e8zPFBpW0DtgyrrPnt0xT?si=d6c48e068a664766)
+- [The Magnus Archives](https://open.spotify.com/show/5pwBAjuJJAOt7cED5Lkjnk)
 
 --- bot-nav
 ## More about me
