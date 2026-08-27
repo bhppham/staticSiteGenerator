@@ -8,11 +8,17 @@ I started in backend-heavy engineering work and learned how to build reliable sy
 
 ## Selected Experience Highlights
 
+## [TraceLink](https://www.tracelink.com)
+
+_Software Engineer Co-op_  | **JUN 2026 - Present**
+
+- More than anything, this co-op has helped me understand what it takes to design a feature beyond writing the code. I have learned to start by understanding the problem, talking with internal customers, considering the architecture, and thinking about how the functionality should behave before deciding how to implement it. This has been especially meaningful alongside my Human Factors Engineering studies, where I am learning to approach technology from the perspective of the people who use it.
+
 ## [JumboCode](https://jumbocode.org)
 
-_Software Developer_ | **SEP 2025 - Present**
+_Software Developer_ | **SEP 2025 - MAY 2026**
 
-- I work on software used by nonprofit partners whose needs are often constrained by time, staffing, and onboarding realities, so product decisions have to be practical and clear.
+- I worked on software used by nonprofit partners whose needs are often constrained by time, staffing, and onboarding realities, so product decisions have to be practical and clear.
 - In the Food Link volunteer portal project, I focus on turning volunteer and coordinator needs into concrete product behavior that improves role clarity and onboarding confidence.
 
 ## [TraceLink](https://www.tracelink.com)
