@@ -26,10 +26,10 @@ Recently really enjoyed Project Hail Mary by Andy Weir
 
 ## Listening
 
+- [The Magnus Archives](https://open.spotify.com/show/5pwBAjuJJAOt7cED5Lkjnk)
 - [Ologies with Alie Ward](https://open.spotify.com/show/5nvRkVMH58SelKZYZFZx1S?si=7ae5782313064aa1)
 - [The Diary Of A CEO with Steven Barlett](https://open.spotify.com/show/7iQXmUT7XGuZSzAMjoNWlX?si=86ccfb2c27274bc4)
 - [Acquired with Ben Gilbert and David Rosenthal](https://open.spotify.com/show/7Fj0XEuUQLUqoMZQdsLXqp)
-- [The Magnus Archives](https://open.spotify.com/show/5pwBAjuJJAOt7cED5Lkjnk)
 
 --- bot-nav
 ## More about me
